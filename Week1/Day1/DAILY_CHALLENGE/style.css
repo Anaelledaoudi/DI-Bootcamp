@@ -47,24 +47,3 @@ nav>img{
 }
 .wrapper p{
 	width: 50%;
-}
-/*
-ul{
-	position: absolute;
-}
-nav{
-	position: relative;
-	background-color: black;
-	color: white;
-}
-ul{
-	position: absolute;
-	rigth: 5%;
-}
-section>img{
-	height: 20%;
-	width: 100%;
-}
-.wrapper{
-	position: relative;
-}

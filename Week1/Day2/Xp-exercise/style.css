@@ -1,0 +1,41 @@
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	background-color: whitesmoke;
+}
+*{
+	box-sizing: border-box;
+}
+nav{
+	position: relative;
+	background-color: black;
+}
+nav>a{
+	font-weight: bold;
+	position: absolute;
+	top: 35%;
+	right: 3%;
+	color: white;
+	text-decoration: none;
+}
+.fa-crown{	
+	color: white;
+	margin-left: 3%;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	background: rgb(36,36,36);
+	background: linear-gradient(356deg, rgba(36,36,36,0.8456057007125891) 0%, rgba(44,44,44,1) 69%, rgba(63,63,63,1) 100%, rgba(240,242,242,1) 100%);
+	height: 10%;
+
+}
+
+

@@ -1,0 +1,54 @@
+img{
+	display: inline-block;
+	height: 20%;
+	width: 20%;
+	margin-left: 3%;
+}
+
+.price{
+	color: green;
+}
+.pastPrice{
+	color: lightgray;
+	text-decoration: line-through;
+}
+.btn{
+	border: 1px solid lightgray;
+	color: gray;
+	border-radius: 5px;
+	display: inline;
+	font-size: 15px;
+	padding: 2px;
+}
+
+.wrapper{
+	position: relative;
+}
+.new,.reduc{
+	border-radius: 90px;
+	padding: 5px;
+	color: white;
+	display: inline;
+	position: absolute;
+	top: 2%;
+
+}
+.new{
+	background-color: green;
+	position: absolute;
+	top: 0.5%;
+	left: 3%;
+}
+
+.reduc{
+	background-color: red;
+	position: absolute;
+	top: 0.5%;
+	left: 16%;
+}
+
+#first,#second,#third,#fourth{
+	display: inline-block;
+	width: 10;
+}
+
