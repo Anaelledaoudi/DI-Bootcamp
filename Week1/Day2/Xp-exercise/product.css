@@ -1,10 +1,3 @@
-img{
-	display: inline-block;
-	height: 20%;
-	width: 20%;
-	margin-left: 3%;
-}
-
 .price{
 	color: green;
 }
@@ -21,9 +14,6 @@ img{
 	padding: 2px;
 }
 
-.wrapper{
-	position: relative;
-}
 .new,.reduc{
 	border-radius: 90px;
 	padding: 5px;
@@ -44,11 +34,16 @@ img{
 	background-color: red;
 	position: absolute;
 	top: 0.5%;
-	left: 16%;
+	left: 13%;
 }
 
 #first,#second,#third,#fourth{
 	display: inline-block;
-	width: 10;
-}
+	width: 22%;
+	margin-left: 2%;
 
+}
+img{
+	height: 200px;
+	width: 150px;
+}
