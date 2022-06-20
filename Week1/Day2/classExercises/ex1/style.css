@@ -1,0 +1,17 @@
+form{
+	background-color:grey ;
+	width: 50%;
+	height: 20%;
+	position: relative;
+}
+form input{
+	display: block;
+}
+input+label{
+	color: white;
+	border-bottom: 2px solid black;
+}
+input:checked+label{
+	color: black;
+	border-bottom: none;
+}

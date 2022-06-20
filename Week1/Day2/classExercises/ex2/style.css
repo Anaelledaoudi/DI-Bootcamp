@@ -1,0 +1,26 @@
+.wrap_em_unit{
+	border:1em solid black;
+	width: 15em;
+	font-size: 2em;
+}
+.em_unit{
+	border: 0.4em solid red;
+	width: 5em;
+}
+.em_unit_small{
+	border: 0.4rem solid green;
+	width: 10em;
+}
+
+.wrap_em_unita{
+	border:1vw solid black;
+	width: 40vw;
+}
+.em_unita{
+	border: 0.4vw solid red;
+	width: 10vw;
+}
+.em_unit_smalla{
+	border: 0.4vw solid green;
+	width: 20vw;
+}

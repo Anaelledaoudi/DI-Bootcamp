@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+}
+
+p span{
+	background-color: yellow;
+}
+ul h3{
+	border-bottom: 2px solid black;
+	display: inline;
+	margin-bottom: 80px;
+
+}
+.catSence li{
+	margin-left: 50px;
+}
+
+footer{
+	text-align: center;
+}
+footer img{
+	width: 400px;
+	height: 300px;
+	position: relative;
+	top: 30px;
+	border: 5px solid orange;
+}
+article h5{
+	color: red;
+	border: 2px solid red;
+	text-align: center;
+}
+.row{
+	display: table-row;
+}
+td,th{
+	border: 2px solid grey;	
+}
+
+td,th,h5{
+	position: relative;
+	right: 10%;
+	left: 10%;
+}
+h5{
+	width: 80.3%;
+	left: 8.3%;
+}
+td{
+	padding: 10px 5px;
+}
