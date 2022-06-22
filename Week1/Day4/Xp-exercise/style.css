@@ -1,0 +1,13 @@
+.container{
+	margin: 5%;
+}
+i{
+	margin-right: 4px;
+}
+.active{
+	background-color: black;
+	height: 120%;
+}
+.card-body span{
+	margin-left: 5%;
+}
