@@ -1,0 +1,133 @@
+/*GENERAL CSS*/
+
+div {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+.greenbox {
+    background-color: #A4E6A4;
+}
+
+.purplebox {
+    background-color: #CEAAF0;
+}
+
+.pinkbox{
+    background-color: #F288D5;
+}
+
+.bluebox{
+    background-color: #438EEA;
+}
+
+.yellowbox{
+    background-color: #F4ED79;
+}
+
+.redbox{
+    background-color: #F8394F;
+}
+
+/* -------------------- */
+
+/*on the parent*/
+.sectiongrid{
+    border: 1px solid black;
+    background-color:gainsboro;
+    display: grid;
+    grid-template-rows: 1fr 2fr ;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 3rem;
+}
+
+.green_g {
+    /* grid-column : in which column is starts/how many columns it takes */
+    grid-column: 1/span 2;
+}
+
+.bluebox {
+    grid-column:  2/span 2;
+    grid-row: 2/span 2;
+}
+
+.pinkbox {
+    grid-row: 2/span 2;
+
+}
+
+.yellowbox{
+    grid-column:  1/span 2;
+}
+/*-------------------*/
+
+
+.gridBox{
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem 3rem;
+}
+
+.gridBox div{
+    border: 2px solid darkred;
+    height: 3em;
+}
+
+.redSqr{
+    background-color: red;
+}
+
+.blueSqr{
+    background-color: lightblue;
+}
+.yellowbox{
+    background-color: yellow;
+    grid-column: 1/span 2;
+}
+/*-----------------------------------*/
+
+.gridBox2{
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+.gridBox2 div{
+  border: 2px solid darkred;
+  color: white;
+  height: 2em;
+}
+.pink1Sqr{
+    background-color: pink;
+    grid-column: 1/span 3;
+}
+.blue2Sqr{
+    background-color: blue;
+    grid-row: 2/span 2;
+}
+.grey3Sqr{
+    background-color: gray;
+
+}
+.lightblue4Sqr{
+    background-color: lightblue;
+}
+.violet5Sqr{
+    background-color: violet;
+    grid-column: 2/span 2;
+}
+.pink6Sqr{
+    background-color: pink;
+    grid-column: 1/span 2;
+}
+.blue7sqr{
+    background-color: blue;
+}
+.grey8sqr{
+    background-color: gray;
+    grid-column: 1/span 3;
+}

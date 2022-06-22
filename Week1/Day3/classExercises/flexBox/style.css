@@ -1,0 +1,75 @@
+/*GENERAL CSS*/
+
+div {
+    text-align: center;
+    color: black;
+    font-size: 4em;
+    flex-basis: 100px;
+}
+
+.greenbox {
+    background-color: #A4E6A4;
+}
+
+.purplebox {
+    background-color: #CEAAF0;
+    align-items: flex-start
+}
+
+.pinkbox{
+    background-color: #F288D5;
+}
+
+.bluebox{
+    background-color: #438EEA;
+}
+
+.yellowbox{
+    background-color: #F4ED79;
+}
+
+.redbox{
+    background-color: #F8394F;
+}
+
+/*-----------------------------*/
+
+.sectionflexbox {
+    border: 3px solid black; 
+    height: 300px;
+    /*important properties on the parent container*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*------------EXERCISE 1 --------------*/
+
+.flex2{
+    border: 2px solid red;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    /*main Axis*/
+    justify-content:space-around;
+    /*other axis so it will be the y*/
+    align-items:center;
+
+}
+.blue{
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 3px;
+}
+
+.long{
+    align-self: stretch;
+    flex-basis: 50px;
+}
+.big{
+    flex-basis: 150px;
+    width: 75%;
+}

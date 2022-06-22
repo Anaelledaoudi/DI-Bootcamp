@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Mukta', sans-serif;
+	background-color: #f1f1f3;
+}
+.flexHeader{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+img	{
+	margin-right: 10%;
+}
+
+.flexNameOrderJob{
+	display: flex;
+	flex-direction: column;
+	margin-left: 3%;
+}
+.name{
+	font-size: 2em;
+	border-bottom: 2px solid #e69b1c ;	
+
+}
+.gridBody{
+	display: grid;
+	/*2 rows that have the same size*/
+	grid-template-rows: 1fr 1fr;
+	/* 2 column but the first is smaller than the second */
+	grid-template-columns: 1fr 2fr ;
+	grid-gap: 1rem 1.3rem;
+	padding: 2rem;
+}
+i {
+	background-color: #e69b1c;
+	border-radius: 50%;
+	border: 1px solid #e69b1c;
+	padding: 5px;
+	color: white;
+}
+.gridContactIcons p,.gridContactIcons i{
+	display: inline-block;
+}
+.gridContactIcons p{
+	width: 80%;
+}
+
+.flexHeader{
+
+}

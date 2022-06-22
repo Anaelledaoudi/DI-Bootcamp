@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+nav{
+	position: relative;
+	background-color: black;
+}
+
+li{
+	display: inline;
+	list-style: none;
+	color: whitesmoke;
+	padding-right: 2em;
+	font-weight: bold;
+	
+}
+ul{
+	position: absolute;
+	right: 5%;
+	top: 0.1%;	
+}
+nav>img{
+	width: 8%;
+	height: 8%;
+	margin-left: 2%;
+}
+.wrapper img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+
+}
+.wrapper{
+	position: relative;
+}
+.wrapper article{
+	position: absolute;
+	left: 5%;
+	bottom: 3%;
+}
+.wrapper h2{
+	font-size: 4em;
+}
+.wrapper p{
+	width: 50%;
+}
+@media all and (min-width: 768px)  {
+	.wrapper h2{
+		font-size: 25px;
+	}
+}
+
+
+and (max-width: 1280px)
+
