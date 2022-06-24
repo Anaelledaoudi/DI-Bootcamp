@@ -1,0 +1,99 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin-top: 0px;
+	background-color: #f8f9fa;
+}
+.container-fluid{
+	background-color: #e35d6a;
+}
+.navbar-nav{
+	color: whitesmoke;
+}
+.navbar{
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 10%;
+}
+a{
+	color: white;
+}
+
+.container img{
+	height: 5%;
+	width: 115%;
+	opacity: 0.5;
+	padding: 0;
+	margin: 0;
+
+}
+div #navbarNavAltMarkup {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+.container{
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.container div{
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	color: #e35d6a;
+	
+}
+.container h1{
+	color: #e35d6a;
+}
+.container p{
+	color: grey;
+}
+button{
+	background-color:#e35d6a ;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: whitesmoke;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+	color: whitesmoke;
+}
+.active{
+	font-size: 1.5em;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+}
+.rounded-circle{
+	width: 10em;
+	height: 10em;
+	margin-top:5%;
+	border-right: 2px solid grey;
+}
+h2{
+	color: #e35d6a;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+.row{
+	margin-top: 5%;
+}
+div,p{
+	border: 2px solid black;
+}
+.col-4 p{
+	color: grey;
+}
+.row{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+}
+.col-8{
+	border-left: 3px solid grey;
+}
+.portofImg img{
+	width: 40%;
+	height: 40%;
+}
