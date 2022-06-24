@@ -50,7 +50,7 @@ div #navbarNavAltMarkup {
 .container p{
 	color: grey;
 }
-button{
+button,.btn{
 	background-color:#e35d6a ;
 }
 .navbar-light .navbar-nav .nav-link{
@@ -79,9 +79,7 @@ h2{
 .row{
 	margin-top: 5%;
 }
-div,p{
-	border: 2px solid black;
-}
+
 .col-4 p{
 	color: grey;
 }
@@ -96,4 +94,15 @@ div,p{
 .portofImg img{
 	width: 40%;
 	height: 40%;
+}
+.row li{
+	list-style: none;
+	margin-right: 2%;
+	color: #e35d6a;
+	width: 5%;
+}
+.row ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
