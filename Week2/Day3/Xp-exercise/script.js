@@ -89,7 +89,7 @@ for(let det in details){
 console.log(det, details[det]);
 }
 //ex 7
-let societyName;
+let societyName="";
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 names.sort();
 for(let n in names){
