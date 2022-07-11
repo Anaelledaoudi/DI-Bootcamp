@@ -1,0 +1,7 @@
+#userName{
+	display: flex;
+	position: absolute;
+	left: 50%;
+	align-items: center;
+	justify-content: space-between;
+}
