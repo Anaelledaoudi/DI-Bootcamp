@@ -1,0 +1,72 @@
+
+body{
+	background-color: #6556cd;
+	background-image: url("img/circuit-pattern.png");
+	margin: 0;
+}
+#nav{
+	display: flex;
+	align-items: center;
+	background-color: #6adf82;
+	margin-bottom: 5%;
+	height:8.5vh ;
+}
+#navContain{
+	display: flex;
+	align-items: center;
+	width: 70%;
+	justify-content: space-between;
+}
+#searchRobot{
+	width: 50%;
+	background-color:#c8d6e5;
+	border: 1px solid #c8d6e5;
+	border-radius: 5px;
+	padding: 0.3%;
+}
+p{
+	margin-left: 4%;
+}
+#title{
+	font-family: 'SEGA LOGO FONT', sans-serif;
+	font-size: 1.8em;
+
+}
+#robotGrid{
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3%;
+}
+.robot{
+	display: flex;
+	flex-direction: column;
+}
+.picRobot{
+	width: 75%;
+	border-radius: 50%;
+	margin-left: 12%;
+	background-color: #303952;	
+	margin-top: 4%;
+}
+.card{
+	background-color: #4fc1c5;
+	background-image: url("img/card-pattern.png");
+	border-radius: 20px;
+	width: 80%;
+	margin-left: 7%;
+}
+.robotName{
+	font-size: 2em;
+	font-family: 'DK Woolwich', sans-serif;
+}
+@media (max-width: 1150px) {
+	#robotGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 750px) {
+	#robotGrid { grid-template-columns: 1fr;}
+	#navContain{width: 92%;}
+}
+.disappear{
+	display: none;
+}
