@@ -2,13 +2,23 @@
 //du to internet connexion stability that didn't let me
 //load the all api 
 
-const xhr=new XMLHttpRequest;
+const form=document.getElementById('form');
+form.addEventListener('submit',retrieveData)
 
-(function requestData(){
-	xhr.open('GET','https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My');
-    xhr.responseType='json';
-    xhr.send();
-})()
+const xhr=new XMLHttpRequest;
+//
+
+function retrieveData(event){
+	const input=event.target.elements.search.value;
+	requestData(input)
+}
+function requestData(value){
+	
+	xhr.open('GET',`https://api.giphy.com/v1/gifs//random?tag=${value}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`);
+  xhr.responseType='json';
+  xhr.send();
+  
+}
 
 xhr.onload=()=>{
 	if(xhr.status!=200){
@@ -16,20 +26,16 @@ xhr.onload=()=>{
 	}else{
 		console.log("finish loading");
 		console.log(xhr.response);
+		displayGif(xhr.response);
 	}
 }
-const form=document.getElementById('form');
-form.addEventListener('submit',retrieveData)
-function retrieveData(event){
-	const input=event.target.elements.search.value;
-	displayGif(input);
-}
 const elements=document.createElement('div');
+
 function displayGif(data){
-  const sunTen='{xhr}&random_id='+data+'&limit=1'
   const img=document.createElement('img');
-  img.setAttribute('url',sunTen.img.url);
-  document.elements.appendChild(img);
+  const {data:{images:{original:url}}}=data;
+  img.setAttribute('src',url);
+  elements.appendChild(img);
   const btnDel=document.createElement('button')
   btnDel.textContent="Delete";
   document.elements.appendChild(btnDel);
