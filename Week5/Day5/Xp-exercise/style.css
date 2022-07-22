@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:url('https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp')
+}
+#imgStarWars{
+    background-image: url('https://i.dlpng.com/static/png/253278_thumb.png');
+    background-repeat: no-repeat;
+    width:310px;
+    height:170px;
+    background-size: 300px;
+    margin-top: 2%;
+
+}
+#container{
+    border: 4px solid #fbc700;
+    height: 250px;
+    width: 420px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin-top: 3%;
+    padding:1%;
+    border-radius: 5px;
+    color: #09031a;
+    font-weight: bold;
+    background-color:  #e1d08b;
+    font-size: 3vh;
+    width: 170px;
+}
+button:hover{
+    background-color: #977901;
+    color: #e5d69c;
+}
+#containAll{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.character{
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1px;
+}
+.myClass{
+    font-size: 100px;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    margin-top: 10px;
+}
