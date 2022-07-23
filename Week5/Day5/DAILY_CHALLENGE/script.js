@@ -30,12 +30,13 @@ form.addEventListener('submit',convert)
 
 
 async function convert(){
+	try{
   const from=document.getElementById('fromMoney').value.substring(0, 3);
   const to=document.getElementById('toMoney').value.substring(0, 3);
   const amount=document.getElementById('amount').value;
   const result=await fetch(`https://v6.exchangerate-api.com/v6/4b15e8d0eb3326f5e043117c/pair/${from}/${to}/${amount}`)
   if (result.status!=200) {
-	console.log("there is an error while converting")
+	throw new Error("there is an error while converting")
   }
   else{
   	const obj=await result.json();
@@ -49,5 +50,8 @@ async function convert(){
     result.classList.add('border');
     div.appendChild(result);
   }
+ }catch(error){
+   div.appendChild(error.message);
+ }
 }
 
