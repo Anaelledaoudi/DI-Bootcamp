@@ -1,0 +1,38 @@
+body{
+	display: flex;
+	align-items: center;
+	background-image: url('img/emploi.jpg');
+	object-fit: cover;
+}
+div{
+	border: 2px solid grey;
+	margin: 2px;
+	align-items: center;
+}
+a{
+	border: 2px solid grey;
+	text-decoration: none;
+	align-items: center;
+	background-color: lightyellow;
+	color: orange;
+	margin-right: 8px;
+	border-radius: 6px;
+	padding: 6px;
+}
+.dropdown-content {
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+.backRed{
+	background-color: #ef9094;
+}
+.backGreen{
+	background-color: #9ae0ae;
+}
+.backGrey{
+	background-color: lightgrey;
+}

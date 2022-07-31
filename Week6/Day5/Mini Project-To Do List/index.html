@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>To Do List</title>
+</head>
+<body>
+	<form id="newTask" method="GET">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name">
+		<label for="description">Description:</label>
+		<input type="text" name="description" id="description">
+		<label for="startDate">Start date and time:</label>
+		<input type="datetime-local" name="startDate" value="2022-07-29T08:30" id="startDate">
+		<label for="endDate">End date and time:</label>
+		<input type="datetime-local" name="endDate" value="2022-08-29T08:30" id="endDate">
+		<input type="submit" value="Add Task">
+	</form>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
