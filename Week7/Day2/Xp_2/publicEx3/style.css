@@ -1,0 +1,14 @@
+h1{
+	color: red;
+	border: 2px dashed blue;
+}
+p{
+	font-weight: bold;
+}
+button{
+	color: blue;
+}
+div{
+	display: flex;
+	flex-direction: row;
+}
