@@ -1,0 +1,33 @@
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6%;
+
+}
+.item{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    
+    border:4px solid rgb(127, 118, 118);
+}
+.nav{
+    background-color: rgb(182, 21, 21);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav p{
+    font-size: 0.7em;
+}
+.card{
+ background-color: rgb(226, 214, 214);
+ color:rgb(91, 88, 88);
+ border-radius: 5px;
+
+}
+
+.card:hover{
+    box-shadow: 0 0 20px rgba(230, 20, 20, 0.694); 
+}
