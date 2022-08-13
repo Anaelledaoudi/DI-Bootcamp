@@ -1,0 +1,7 @@
+.item{
+    background-color: rgb(198, 189, 189);
+    border-bottom: 2px solid rgb(109, 104, 104);
+}
+.item:hover{
+    text-decoration: line-through;
+}
