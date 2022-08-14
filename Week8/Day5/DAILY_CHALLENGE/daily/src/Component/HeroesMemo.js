@@ -11,27 +11,21 @@ class HeroesMemo extends React.Component{
         Score:0,
         TopScore:0,
         ClickHeroes:[]
-
-        // arrHeroes:[{
-        // id: '',
-        // clicked: false,
-        // name: '',
-        // image: '',
-        // occupation: '' 
-        // }],
-      
     }
    }
+
    componentDidUpdate(){
-    this.state.Superheroes.map(item=>{
-        return(
-        <div className="card" onClick={this.saveCard} id={item.id}>
-        <img key={item} id={item.id} className="item" src={item.image}/>     
-        <p id={item.id}>{item.name}</p>
-        </div>
-        )
-     })
+   const arr=this.state.Superheroes;
+    let curIndex=arr.length;
+    let rdmIndex;
+    while (curIndex != 0) {
+        rdmIndex=Math.floor(Math.random()*curIndex);
+        curIndex--;
+      [arr[curIndex],arr[rdmIndex]]=[arr[rdmIndex],arr[curIndex]]  
+    }
+    console.log(curIndex);
    }
+
    saveCard=(evt)=>{
     this.state.Score++;
     this.setState({Score:this.state.Score});
@@ -46,7 +40,7 @@ class HeroesMemo extends React.Component{
       this.setState({Score:0});
     }
    }
-  
+ 
    render(){
     return(
     <>
@@ -63,7 +57,7 @@ class HeroesMemo extends React.Component{
         //   for (let i = array.length - 1; i > 0; i--) {}
         this.state.Superheroes.map((item,elm)=>{
             return(
-            <div className="card" onClick={this.saveCard} id={item.id}>
+            <div className="card" onClick={this.saveCard}  id={item.id}>
             <img key={item} id={item.id} className="item" src={item.image}/>     
             <p id={item.id}>{item.name}</p>
             </div>
